@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.irk.cacti.QuestionsActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtSearch"
+        android:hint="Search for keywords"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lytFilters"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edtSearch">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/spinnerbg"
+            android:id="@+id/spnSubject"
+            android:layout_margin="4dp"
+            android:layout_weight="1"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:background="@drawable/spinnerbg"
+            android:layout_height="48dp"
+            android:id="@+id/spnSort"
+            android:layout_margin="4dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstQuestions"
+        android:layout_below="@+id/lytFilters"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_add_white_24dp"
+        android:id="@+id/btnAsk"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="64dp"/>
+</RelativeLayout>

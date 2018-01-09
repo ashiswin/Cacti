@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/replyBox"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lytMain">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/imgProfilePic"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtReply"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpvote"
+        android:src="@drawable/thumbsup_grey"
+        android:layout_below="@id/lytMain"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDownvote"
+        android:src="@drawable/thumbsdown_grey"
+        android:layout_below="@id/lytMain"
+        android:layout_toRightOf="@+id/btnUpvote"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtScore"
+        android:layout_toRightOf="@id/btnDownvote"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/lytMain"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:layout_below="@id/lytMain"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

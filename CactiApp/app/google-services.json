@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "454113742028",
+    "firebase_url": "https://cacti-60c2d.firebaseio.com",
+    "project_id": "cacti-60c2d",
+    "storage_bucket": "cacti-60c2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454113742028:android:de2c626aa3f0d102",
+        "android_client_info": {
+          "package_name": "com.irk.cacti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454113742028-87d2k4l4d4j4jmko780rfj8l7kmt5md9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl4HpiBJ_VjGWOtBfzJt66ejybdbyF5hU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

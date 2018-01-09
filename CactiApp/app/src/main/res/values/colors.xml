@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#7E1616</color>
+    <color name="colorLight">#FFF5F5</color>
+    <color name="profileBorderColor">#9AFFFFFF</color>
+    <color name="replyBox">#FFF5F5</color>
+</resources>

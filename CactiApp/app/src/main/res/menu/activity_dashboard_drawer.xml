@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Institutions"
+        android:icon="@drawable/institutions_symbol"
+        android:id="@+id/Institution">
+        <menu>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/itmAddInstitution"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:title="Add Institution" />
+    <item
+        android:id="@+id/nav_manage"
+        android:icon="@drawable/settings_symbol"
+        android:title="Settings" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_symbol"
+        android:title="Logout"/>
+</menu>

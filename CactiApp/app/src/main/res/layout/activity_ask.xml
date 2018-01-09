@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.irk.cacti.AskActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtTitle"
+        android:hint="Title"
+        android:textSize="24dp"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_pen_red"
+        android:layout_alignRight="@+id/edtTitle"
+        android:layout_alignBottom="@+id/edtTitle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedrectangle"
+        android:id="@+id/edtDescription"
+        android:hint="Description..."
+        android:textSize="16dp"
+        android:textColorHint="@color/colorAccent"
+        android:gravity="top"
+        android:textAlignment="gravity"
+        android:lines="6"
+        android:minLines="4"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:layout_below="@id/edtTitle" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/attachment"
+        android:id="@+id/btnAttach"
+        android:layout_alignBottom="@+id/edtDescription"
+        android:layout_alignRight="@id/edtDescription"
+        android:layout_margin="8dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/spinnerbg"
+        android:id="@+id/spnSubject"
+        android:layout_below="@+id/edtDescription"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:background="@drawable/submit_button_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@id/spnSubject"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.irk.cacti.RegistrationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/display_photo"
+        android:id="@+id/imgProfilePic"
+        android:contentDescription="Profile Picture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+    <EditText
+        android:background="@drawable/greyedout_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtName"
+        android:hint="Full name"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgProfilePic"
+        />
+    <EditText
+        android:background="@drawable/greyedout_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtUsername"
+        android:hint="Username"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtName"
+        />
+    <EditText
+        android:background="@drawable/greyedout_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtPassword"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtUsername"/>
+    <EditText
+        android:background="@drawable/greyedout_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtConfirmPassword"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtPassword"/>
+    <EditText
+        android:background="@drawable/greyedout_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtEmail"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtConfirmPassword"/>
+
+    <Button
+        android:background="@drawable/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtEmail"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sandy"/>
+
+    <ImageView
+        android:background="@drawable/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/btnBack"/>
+
+</RelativeLayout>

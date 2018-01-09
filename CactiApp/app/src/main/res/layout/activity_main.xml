@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.irk.cacti.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cactus_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/edtUsername"/>
+
+    <EditText
+        android:background="@drawable/general_input_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtUsername"
+        android:hint="Username"
+        android:alpha="0.75"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    <EditText
+        android:background="@drawable/general_input_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/edtPassword"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:alpha="0.75"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtUsername"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/login_button"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/edtPassword"
+        android:layout_alignLeft="@+id/edtPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/transparent"
+        android:alpha="0.5"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sandy"/>
+
+</RelativeLayout>
